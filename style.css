@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 1400px;
+    }
+}
+
+
+.logo img {
+    height: 30px;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+}
+
+header {
+    position: relative;
+}
+
+#cart {
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    font-size: 20px;
+    color: #d03f38;
+}
+
+.navbar {
+    display: block;
+    text-align: center;
+    background-color: #31353e;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.menu {
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.menu li {
+    position: relative;
+    color: #fff;
+}
+
+.menu>li {
+    float: left;
+    margin-right: 1px;
+    width: 100px;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.dropdown ul {
+    display: none;
+}
+
+.menu .dropdown li {
+    position: relative;
+    color: black;
+    padding: 5px
+}
+
+.menu li:hover {
+    color: red;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover>ul {
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.menu>li:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.menu>li:last-child {
+    border-radius: 0 0 4px 0;
+    margin-right: 0;
+}
+
+.product-container {
+    overflow: hidden;
+    margin: auto 30px;
+}
+
+aside.images,
+.info.main-info {
+    width: 50%;
+    float: left;
+}
+
+.thumbs {
+    width: 100px;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+.thumbs .active {
+    border-color: red;
+}
+
+.product-container img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.mainImg {
+    float: right;
+    width: calc(100% - 100px);
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.info.main-info h1 {
+    font-size: 3rem;
+}
+
+.info.main-info .product-id {
+    color: red;
+}
+
+.product-description {
+    margin: 20px auto;
+}
+
+.size span {
+    display: inline-block;
+    padding: 7px 15px;
+    border: 1px solid #31353e;
+}
+
+input[type="radio"]:checked+span {
+    background-color: #31353e;
+    color: #fff;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.sizeLabel {
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.actions {
+    position: relative;
+    margin: 20px 0px;
+}
+
+.buyBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+button {
+    background-color: #c70c2b;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.price {
+    color: #c70c2b;
+    font-size: 1.8rem;
+}
+
+.related ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.related ul li:hover {
+    background-color: #ccc;
+}
+
+.related ul li:hover>button {
+    display: block;
+}
+
+.related,
+.links {
+    margin: 0px 30px;
+    overflow: hidden;
+}
+
+.related button {
+    margin: auto;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 35px;
+    padding: 5px 35px;
+    display: none;
+}
+
+.related img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.related h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.related h5 {
+    color: #c70c2b;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+}
+
+.twoCol {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+}
+
+.links div {
+    float: left;
+    width: 20%;
+}
+
+.links div.emailTextbox,
+.links [type="text"],
+.links button {
+    width: 100%;
+}
+
+.emailTextbox [type="text"] {
+    padding: 10px;
+    margin-bottom: 7px;
+    background-color: #202020;
+    border: none;
+}
+
+.links div:first-child {
+    width: 40%;
+}
+
+.links {
+    padding: 30px 0px;
+}
+
+.links h4 {
+    margin-bottom: 10px;
+}
+
+.links li {
+    color: #58615d;
+}
+
+.trademark {
+    color: #58615d;
+    text-align: center;
+    padding-bottom: 10px;
+}
